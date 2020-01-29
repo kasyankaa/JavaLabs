@@ -2,7 +2,7 @@ package lab1;
 
 public class Insect {
 	public static final int DEFAULT_NUMBER_OF_TERRARIUMS = 4;
-	// default fields
+// default fields
 	private static final String REGION_OF_RESIDENCE_OF_INSECT = "tropic regions";
 	private static final String TYPE_OF_FOOD_INSECT_CONSUMES = "other insects";
 	private static final int SIZE_IN_LENGTH_OF_ADULT_INSECT = 5;
@@ -113,5 +113,18 @@ public class Insect {
 	public String printNumberOfTheseInsects() {
 		return "Number of these insects=" + numberOfTheseInsects;
 	}
+	
+	public void resetValues(String nameOfInsect, double speedInMetersPerSecond, int weightInGrams,
+			String nameOfSubClass, int sizeInLengthOfAdultInsect, String typeOfFoodInsectConsumes,
+			String regionOfResidenceOfInsect) {
+		this.nameOfInsect = nameOfInsect;
+		this.speedInMetersPerSecond = speedInMetersPerSecond;
+		this.weightInGrams = weightInGrams;
+		this.nameOfSubClass = nameOfSubClass;
+		this.sizeInLengthOfAdultInsect = sizeInLengthOfAdultInsect;
+		this.typeOfFoodInsectConsumes = typeOfFoodInsectConsumes;
+		this.regionOfResidenceOfInsect = regionOfResidenceOfInsect;
+	}
 
 }
+
